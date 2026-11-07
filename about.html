@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About us | Oceandrop International Serviced Ltd.</title>
+    <meta name="description" content="Learn about Oceandrop International Serviced Ltd. and how we help you buy a car with ease and confidence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        /* apply the saved (or system) theme before the page paints, so there is no flash */
+        try {
+            var t = localStorage.getItem('theme');
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+
+    <div id="preloader" role="status" aria-live="polite" aria-label="Loading">
+        <div class="pl-inner">
+            <svg class="pl-drop" viewBox="0 0 22 28" aria-hidden="true"><path d="M11 1C11 1 2 12 2 18a9 9 0 0018 0C20 12 11 1 11 1z" fill="#1fb5c9"/></svg>
+            <div class="pl-name">Oceandrop International</div>
+            <div class="pl-bar"><span></span></div>
+        </div>
+    </div>
+
+
+    <header id="top">
+        <div class="wrap nav">
+            <a class="logo" href="index.html" aria-label="Oceandrop home">
+                <svg viewBox="0 0 22 28" aria-hidden="true"><path d="M11 1C11 1 2 12 2 18a9 9 0 0018 0C20 12 11 1 11 1z" fill="#1fb5c9"/></svg> Oceandrop International
+            </a>
+            <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+            <nav id="menu" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a class="active" href="about.html" aria-current="page">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="btn btn-primary" href="contact.html#form" style="padding:8px 20px;color:var(--deep)">Book a visit</a></li>
+                </ul>
+            </nav>
+            <button class="theme-btn" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1111.2 3a6.8 6.8 0 009.8 9.8z" fill="currentColor"/></svg>
+                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-hero">
+            <div class="wrap">
+                <div class="greeting" data-greeting aria-live="polite"></div>
+                <p class="crumbs"><a href="index.html">Home</a> / About us</p>
+                <h1>About Oceandrop International</h1>
+                <p>We help people buy the car they want, with ease and confidence.</p>
+            </div>
+        </div>
+
+        <section>
+            <div class="wrap split">
+                <div>
+                    <h2 class="title reveal">Who we are</h2>
+                    <p class="reveal">Oceandrop International Serviced Ltd. is a car sales company built around one idea: buying a car should not be stressful. We list inspected cars, show clear prices and stay in touch after the sale.</p>
+                    <p class="reveal">Whether you want a family sedan, an SUV for the road or a van for your business, our team helps you compare options and choose a car that fits your needs and budget.</p>
+                    <p class="reveal"><a class="btn btn-primary" href="menu.html">See our cars</a></p>
+                </div>
+                <div class="panel reveal">
+                    <div class="stat"><strong>4+</strong><span>Makes in stock</span></div>
+                    <div class="stat"><strong>100%</strong><span>Cars inspected</span></div>
+                    <div class="stat"><strong>Clear</strong><span>Pricing, no surprises</span></div>
+                    <div class="stat"><strong>After-sale</strong><span>Support you can call</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt">
+            <div class="wrap">
+                <h2 class="title reveal">What we stand for</h2>
+                <p class="sub reveal">Three promises behind every car we sell.</p>
+                <div class="cards3">
+                    <div class="card reveal">
+                        <h3>Honesty</h3>
+                        <p>We tell you what the car is, where it came from and what it costs.</p>
+                    </div>
+                    <div class="card reveal">
+                        <h3>Quality</h3>
+                        <p>Every car is checked before it is listed, so you can buy with confidence.</p>
+                    </div>
+                    <div class="card reveal">
+                        <h3>Care</h3>
+                        <p>We answer your questions before the sale and after it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2 class="title reveal">How buying works</h2>
+                <p class="sub reveal">Four simple steps from first look to the keys in your hand.</p>
+                <ol class="steps">
+                    <li class="reveal">
+                        <h3>Choose</h3>
+                        <p>Browse the menu and pick the cars you like.</p>
+                    </li>
+                    <li class="reveal">
+                        <h3>Enquire</h3>
+                        <p>Send us a message or call to ask about a car.</p>
+                    </li>
+                    <li class="reveal">
+                        <h3>Inspect</h3>
+                        <p>Visit the showroom, see the car and take a test drive.</p>
+                    </li>
+                    <li class="reveal">
+                        <h3>Drive away</h3>
+                        <p>Complete the paperwork and take your car home.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="why final">
+            <div class="wrap">
+                <h2 class="title reveal">Let's find your dream car</h2>
+                <p class="sub reveal">Visit our showroom or send us a message and we will respond quickly.</p>
+                <p class="reveal"><a class="btn btn-primary" href="contact.html#form">Contact us</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>&copy; <span id="yr">2026</span> Oceandrop International Serviced Ltd. <i>Developed by ONYE BEST TECH COMPUTERS</i></span>
+            <span><a href="index.html">Home</a> &nbsp;·&nbsp; <a href="menu.html">Menu</a> &nbsp;·&nbsp; <a href="about.html">About us</a> &nbsp;·&nbsp; <a href="contact.html">Contact</a></span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

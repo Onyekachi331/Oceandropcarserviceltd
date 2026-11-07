@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oceandrop International Serviced Ltd. | Buy Your Dream Car Today</title>
+    <meta name="description" content="Buy your dream car today with ease and confidence. Oceandrop International Serviced Ltd.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        /* apply the saved (or system) theme before the page paints, so there is no flash */
+        try {
+            var t = localStorage.getItem('theme');
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+
+    <div id="preloader" role="status" aria-live="polite" aria-label="Loading">
+        <div class="pl-inner">
+            <svg class="pl-drop" viewBox="0 0 22 28" aria-hidden="true"><path d="M11 1C11 1 2 12 2 18a9 9 0 0018 0C20 12 11 1 11 1z" fill="#1fb5c9"/></svg>
+            <div class="pl-name">Oceandrop International</div>
+            <div class="pl-bar"><span></span></div>
+        </div>
+    </div>
+
+    <header id="top">
+        <div class="wrap nav">
+            <a class="logo" href="index.html" aria-label="Oceandrop home">
+                <svg viewBox="0 0 22 28" aria-hidden="true"><path d="M11 1C11 1 2 12 2 18a9 9 0 0018 0C20 12 11 1 11 1z" fill="#1fb5c9"/></svg> Oceandrop International
+            </a>
+            <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+            <nav id="menu" aria-label="Main">
+                <ul>
+                    <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="btn btn-primary" href="contact.html#form" style="padding:8px 20px;color:var(--deep)">Book a visit</a></li>
+                </ul>
+            </nav>
+            <button class="theme-btn" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1111.2 3a6.8 6.8 0 009.8 9.8z" fill="currentColor"/></svg>
+                <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="wrap">
+                <div class="greeting" data-greeting aria-live="polite"></div>
+                <h1>Buy your dream car today!</h1>
+                <p>With ease and confidence!</p>
+                <div class="cta">
+                    <a class="btn btn-primary" href="#cars">Browse cars</a>
+                    <a class="btn btn-ghost" href="contact.html">Talk to us</a>
+                </div>
+            </div>
+            <svg class="drive" viewBox="0 0 400 150" aria-hidden="true"><use href="#car"/></svg>
+            <div class="road"></div>
+        </div>
+
+        <div class="finder wrap">
+            <form id="finder-form">
+                <div><label for="make">Make</label>
+                    <select id="make">
+          <option value="all">Any make</option>
+          <option>Toyota</option><option>Lexus</option><option>Honda</option><option>Mercedes-Benz</option>
+        </select></div>
+                <div><label for="type">Body type</label>
+                    <select id="type">
+          <option value="all">Any type</option>
+          <option>Sedan</option><option>SUV</option><option>Truck</option><option>Van</option>
+        </select></div>
+                <div><label for="budget">Budget</label>
+                    <select id="budget">
+          <option value="all">Any budget</option>
+          <option value="under">Under ₦10m</option>
+          <option value="mid">₦10m – ₦25m</option>
+          <option value="above">Above ₦25m</option>
+        </select></div>
+                <button class="btn" type="submit">Find my car</button>
+            </form>
+        </div>
+
+        <section id="cars">
+            <div class="wrap">
+                <h2 class="title reveal">Featured cars</h2>
+                <p class="sub reveal">Pick a make to see its cars. Sample listings: replace the names, details and prices in <code>cars.js</code> with your real stock.</p>
+                <div id="make-tabs" class="tabs" role="group" aria-label="Choose a make"></div>
+                <p id="result-note" class="result-note" aria-live="polite"></p>
+                <div id="car-grid" class="cars"></div>
+                <p id="more-link" class="more"><a class="btn btn-dark" href="menu.html">See the full menu</a></p>
+            </div>
+        </section>
+
+        <section id="why" class="why">
+            <div class="wrap">
+                <h2 class="title reveal">Buying a car should feel simple</h2>
+                <p class="sub reveal">We handle the hard parts so you can drive away sure of your choice.</p>
+                <div class="points">
+                    <div class="point reveal">
+                        <h3>Inspected cars</h3>
+                        <p>Every car is checked before it is listed, so you know what you are buying.</p>
+                    </div>
+                    <div class="point reveal">
+                        <h3>Clear pricing</h3>
+                        <p>You see the full price and paperwork needs up front. No surprises.</p>
+                    </div>
+                    <div class="point reveal">
+                        <h3>Support after the sale</h3>
+                        <p>Questions after you drive off? Call us and we will help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="final">
+            <div class="wrap">
+                <h2 class="title reveal">Ready to find your dream car?</h2>
+                <p class="sub reveal">Visit our showroom or send us a message and we will respond quickly.</p>
+                <p class="reveal"><a class="btn btn-primary" href="tel:+2348132428417">Call +234 813 242 8417</a>
+                    <a class="btn btn-dark" href="contact.html#form">Send us a message</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>&copy; <span id="yr">2026</span> Oceandrop International Serviced Ltd. <i>Developed by ONYE BEST TECH COMPUTERS</i></span>
+            <span><a href="index.html">Home</a> &nbsp;·&nbsp; <a href="menu.html">Menu</a> &nbsp;·&nbsp; <a href="about.html">About us</a> &nbsp;·&nbsp; <a href="contact.html">Contact</a></span>
+        </div>
+    </footer>
+
+    <script src="cars.js"></script>
+    <script src="main.js"></script>
+    <script>
+        initCatalog({
+            limit: 6
+        });
+    </script>
+</body>
+
+</html>
